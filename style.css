@@ -1,0 +1,252 @@
+
+body {
+    background-color: rgba(255, 255, 255, 0.284);
+      background-image: url('iccbackground.jpg');
+      background-blend-mode:color;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+  }
+
+  .middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  
+   }
+
+   .btn {
+background-color: rgba(245, 245, 245, 0.684);
+border: 2px solid #000000;
+font-family: "montserrat", sans-serif;
+text-transform: uppercase;
+padding: 12px 20px;
+min-width: 600px;
+margin: 10px;
+cursor: pointer;
+transition: color 0.4s linear;
+position: relative;
+   }
+
+   .btn:hover {
+    color: #000000;
+   }
+
+   .btn:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #003cff;
+    z-index: -1;
+    transition: transform 0.5s;
+    transform-origin: 0 0;
+    transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
+   }
+
+   .btn1::before {
+    transform: scaleX(0);
+   }
+
+   .btn2::before {
+    transform: scaleY(0);
+   }
+
+   .btn1:hover::before {
+    transform: scaleX(1);
+   }
+
+   .btn2:hover::before {
+    transform: scaleY(1);
+   }
+   
+.topnav {
+    overflow:auto;
+    background-color: rgba(0, 98, 255, 0.908);
+}
+
+h1 {
+ font-family: sans-serif;
+}
+
+h2 {
+  font-family: sans-serif;
+ }
+
+.topnav a {
+  float:left ;
+  color: aliceblue;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.topnav a:hover {
+   background-color: rgb(0, 64, 148)
+     }
+
+   .topnav a.active {
+    background-color: #0a0af3
+   }
+
+  .img1 {
+    float: right;
+    border: 1px dotted black;
+    margin: 0px 0px 15px 20px;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .img-container {
+    border-color: #0a0af3;
+    float: left;
+    width: 50%;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   height: 100vh;
+  }
+  
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  
+
+ footer {
+    overflow: hidden;
+    background-color: rgba(0, 0, 255, 0);
+    text-emphasis-color: #da0303;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px; 
+ 
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: rgb(0, 0, 0);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #dddddda6;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.important {
+text-indent: 2%;
+background-color: rgba(250, 235, 215, 0.699);
+}
+
+.container {
+display: grid;
+grid-template-columns: 22rem 1fr 22rem;
+grid-template-rows: auto 1fr auto ;
+grid-template-areas: 
+"header header header"
+"nav content sidebar"
+"footer footer footer";
+min-height: 100vh;
+}
+
+header {
+  grid-area: header;
+}
+
+nav {
+  grid-area: nav;
+  padding: 1rem;
+  background-color: #ffffff7f;
+}
+
+main {
+  grid-area: content;
+  padding: 2dvh;
+  background-color: #ffffff65;
+}
+
+aside {
+  grid-area: sidebar;
+  padding: 1rem;
+  background-color: #ffffff88;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 5px;
+  background-color: #253c4e;
+  padding: 5px;
+  min-height: 100vh;
+ 
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 5px 0;
+  font-size: 30px;
+}
+
+.wrapper {
+	width: 80%;
+	margin: 50px auto;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	grid-gap: 30px;
+}
+.wrapper img {
+	width: 100%;
+	cursor: pointer;
+	transition: 1s ease;
+}
+.wrapper img:hover {
+	transform: scale(0.9);
+}
+
+ 
+
+
